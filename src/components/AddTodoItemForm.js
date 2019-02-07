@@ -19,13 +19,17 @@ const styles = theme => ({
 
 class AddTodoItemForm extends Component {
 
+    // constructor(props){
+    //     super(props)
+    //     this.onChange = this.onChange.bind(this);
+    // }
 
     state = {
         title: ''
     }
 
     onChange = (e) => {
-        console.log(e.target.value)
+        console.log(this.state)
         this.setState({
             // title: e.target.value
             [e.target.name]: e.target.value
